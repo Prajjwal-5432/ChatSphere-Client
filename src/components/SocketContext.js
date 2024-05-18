@@ -7,7 +7,7 @@ export const SocketProvider = ({ children }) => {
   const [socket, setSocket] = useState(null);
 
   useEffect(() => {
-    const newSocket = io("https://chatsphere-server.onrender.com");
+    const newSocket = io(process.env.REACT_APP_SERVER_URL);
     setSocket(newSocket);
 
     return () => {

@@ -1,6 +1,5 @@
 import React, { Suspense } from "react";
 import JoinPage from "./components/JoinPage";
-import MessageRoom from "./components/MessageRoom";
 import { Routes, Route } from "react-router-dom";
 
 const MessageRoomLazy = React.lazy(() => import("./components/MessageRoom"));

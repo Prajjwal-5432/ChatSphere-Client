@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import SendMessageForm from "./SendMessageForm";
 import MessageList from "./MessageList";
 import { useLocation, useNavigate } from "react-router-dom";
-import { io } from "socket.io-client";
 import { useSnackbar } from "notistack";
 import { useSocket } from "./SocketContext";
 import Sidebar from "./Sidebar";
